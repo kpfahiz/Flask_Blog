@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@keyframes rotation {
+  to {
+    transform: rotate(360deg) translateX(-50%) translateY(-50%);
+  }
+}
+
+
+.nav_bar{
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    background-color: #ffffff2f !important;
+    backdrop-filter: blur(10px);
+}
+.main-header{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+    background-size: cover;
+    padding: 150px 150px;
+}
+.default-header{
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    padding: 60px 50px;
+}
+.default-body-content  h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+}
+.default-body-content  p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.default-header h1{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 100px;
+    font-weight: 600;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.main-header h1{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 100px;
+    font-weight: 600;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.header-text-holder,.subscribe-holder{
+    text-align: center;
+    color: rgb(30, 6, 119);
+}
+.my_archive {
+    background-color: grey;
+}
+.home-body-content, .default-body-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.home-body-content .my_card{
+    margin-bottom: 25px;
+    transition-duration: 0.4s;
+}
+.my_card:hover{
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    transition-duration: 0.4s;
+}
+.my_card h3{
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+.card-footer {
+  padding-bottom: 1em;
+  padding-left: 1em;
+  background: white;
+  border-top: 0px;
+}
+.main-footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color:rgb(163, 161, 161);
+
+}
+.main-footer p{
+    margin: 0px;
+}

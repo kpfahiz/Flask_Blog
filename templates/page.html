@@ -1,0 +1,93 @@
+{% extends "master.html"%}
+{% block title%}
+Pages
+{%endblock%}
+
+
+{% block body%}
+
+  <!--bodycontent-->
+  <section class="default-body-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+
+           <img src="{{ url_for('static', filename='img/1.jpg')}}" class="img-fluid rounded" alt="Something">
+           
+           <div class="content">
+               <h2>NETWORK HACKING - POST CONNECTION ATTACK - INFORMATION GATHERING</h2>
+               <pre>i)Discovering Device Connected to the same Network
+
+                Discover all device on their on network.
+                Display their:
+            
+                        - IP Address
+                        - MAC Address
+                        - OS
+                        - Open Ports
+                        - Running Service
+                        - etc......
+            
+                There are different tools used for discovering information about 
+                target  devices such as NetDiscover & Nmap .
+            
+            Example with NetDiscover:
+            
+                Here used to details of wired connections:
+            
+                    netdiscover -r 10.0.2.1/24
+                      
+                       r                     - range of the IP Address.
+                       10.0.2.1/24    - It tells range 10.0.2.1 to 10.0.2.254
+            
+                Discover details of wireless connections :
+            
+                     netdiscover -r 192.168.1.1/24
+            NOTE :
+                        To work this command on wireless network you  should disable
+                        NAT network.
+            
+            ii)Gathering Sensitive Information About Connected Devices
+                Here we are using Nmap/Zmap to gathering sensitive information about
+                 connected devices such as MAC address , open port, running services,OS
+                 ,connected clients ,etc...
+            
+            Zmap -> It is a Graphical User Interface of Nmap.</pre>
+           </div>
+           
+        </div>
+        <div class="col-lg-4 col-md-4 ">
+
+          <aside class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h4 class="card-title">Subscribe for Latest Updates</h4>
+              <p class="card-text">Get Latest updates and freebies</p>
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control form-control-sm" required placeholder="Email ID">
+                </div>
+                <div class="mb-3">
+                  <input type="submit" class="btn btn-sm btn-block btn-light" value="Subscribe Now">
+                </div>
+              </form>
+            </div>
+          </aside>
+          <ul class="list-group mb-3 ">
+            <li class="list-group-item my_archive ">Archives</li>
+            <li class="list-group-item"><a href="#">2018</a></li>
+            <li class="list-group-item"><a href="#">2018</a></li>
+            <li class="list-group-item"><a href="#">2018</a></li>
+          </ul>
+
+          <ul class="list-group mb-3">
+            <li class="list-group-item my_archive">Recent Posts</li>
+            <li class="list-group-item"><a href="#">Post one</a></li>
+            <li class="list-group-item"><a href="#">Post Two</a></li>
+            <li class="list-group-item"><a href="#">Post Three</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--bodycontent-->
+   {%endblock%}

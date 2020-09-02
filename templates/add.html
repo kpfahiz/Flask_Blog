@@ -1,0 +1,31 @@
+{% extends "master.html"%}
+{% block title%}
+Add Post
+{%endblock%}
+
+
+{% block body%}
+<div class="card">
+    <div class="card-body">
+<form name="addForm" id="addForm" method="POST" action="{{ url_for('addpost')}}" enctype="multipart/form-data">
+                 <div class="mb-3">
+                   <input type="text" class="form-control form-control-sm" name="title" id="title" placeholder="Title">
+                 </div>
+                 <div class="mb-3">
+                  <input type="text" class="form-control form-control-sm" name="subtitle" id="subtitle" placeholder="subtitle">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control form-control-sm " rows="6" name="content" id="content" placeholder="Content"></textarea>
+                </div>
+                <div class="mb-3">
+                  <input type="file" class="form-control form-control-sm" accept="img/*"  name="photo" id="photo" >
+                    <div id="thumb-output"></div>
+                </div>
+                <div class="mb-3">
+                  <input type="submit" class="btn btn-sm btn-secondary" value="Post ">
+                </div>
+</form>
+    </div>
+    </div>
+
+{%endblock%}

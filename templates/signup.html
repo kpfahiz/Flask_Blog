@@ -1,0 +1,31 @@
+{% extends "master.html"%}
+{% block title%}
+SignIn
+{%endblock%}
+
+
+{% block body%}
+   <div class="container mb-3 mt-4">
+      <div class="row justify-content-center mb-3">
+         <div class="col-lg-4 col-md-4 ">
+             <div class="card">
+                 <div class="card-body ">
+                    <img src="{{url_for('static', filename='img/login.jpg')}}" height="350px" width="320px" class="mb-3 rounded">
+                    <form method="POST" action="{{url_for('adduser')}}" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <input class="form-control " id="name" name="name" placeholder="Name" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" class="btn btn-secondary btn-block" id="submit" value="SignUp" >
+                        </div>
+                    </form>
+                 </div>
+             </div>
+         </div>
+      </div>
+   </div>
+
+{%endblock%}

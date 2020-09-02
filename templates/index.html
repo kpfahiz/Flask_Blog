@@ -1,0 +1,37 @@
+{% extends "master.html"%}
+
+
+{% block title%}
+Home
+{%endblock%}
+
+
+{% block body%}
+
+          <section class="home-body-content">
+              <div class="container">
+
+                  <div class="row mb-3">
+                     {% for post in posts %}
+                      <div class="col-lg-3 col-md-3 d-flex  align-items-stretch">
+
+                          <div class="card my_card">
+
+                              <img src="{{ url_for('static', filename='images/'+post.imgs)}}" height="314" width="600" class="img-fluid" alt="banner">
+                              <div class="card-body flex-column">
+                                  <h3 class="card-title">{{ post.title }}</h3>
+                                  <p class="card-subtitle">{{ post.subtitle }}</p>
+                              </div>
+                              <div class="card-footer text-muted mx-auto">
+                                  <a href="{{ url_for('post',post_id=post.id)}}" class="btn btn-sm btn-secondary ">Read More</a>
+                              </div>
+                          </div>
+
+                      </div>
+
+                     {% endfor %}
+                  </div>
+
+              </div>
+          </section>
+{%endblock%}
